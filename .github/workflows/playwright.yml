@@ -27,7 +27,7 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run UI & API Test Suites
-        run: npx playwright test
+        run: npx playwright test --project=chromium
 
       - name: Upload Playwright HTML Report
         uses: actions/upload-artifact@v4
